@@ -18,10 +18,6 @@
 #include "WiFly_Commands.h"
 #include "pwm_servo.h"
 #include "steering_config.h"
-//#include "hene_uart.h"
-//#include <stdint.h>
-//#include <stdio.h>
-//#include <string.h>
 
 // static consts
 static const uint32_t WAIT_TIME_RESPONSE = 20000u; // = 20 ms)

@@ -654,10 +654,10 @@ void main(void) {
 	motor1.rg.StepAngleMax = _IQ(BASE_FREQ*motor1.T);
 
 	// Initialize the PI module for position
-	motor1.pi_pos.Kp = _IQ(1.0);            //_IQ(10.0);
+	/*motor1.pi_pos.Kp = _IQ(1.0);            //_IQ(10.0);
 	motor1.pi_pos.Ki = _IQ(0.001);       //_IQ(motor1.T*SpeedLoopPrescaler/0.3);
 	motor1.pi_pos.Umax = _IQ(1.0);
-	motor1.pi_pos.Umin = _IQ(-1.0);
+	motor1.pi_pos.Umin = _IQ(-1.0);*/
 
 	// Init QEP parameters
 	motor2.qep.LineEncoder = 1000; // these are the number of slots in the QEP encoder
@@ -677,10 +677,10 @@ void main(void) {
 	motor2.rg.StepAngleMax = _IQ(BASE_FREQ*motor2.T);
 
 	// Initialize the PI module for position
-	motor2.pi_pos.Kp = _IQ(1.0);            //_IQ(10.0);
+	/*motor2.pi_pos.Kp = _IQ(1.0);            //_IQ(10.0);
 	motor2.pi_pos.Ki = _IQ(0.001);       //_IQ(motor1.T*SpeedLoopPrescaler/0.3);
 	motor2.pi_pos.Umax = _IQ(1.0);
-	motor2.pi_pos.Umin = _IQ(-1.0);
+	motor2.pi_pos.Umin = _IQ(-1.0);*/
 
 	// Initialize the PID module for speed
 
@@ -1241,7 +1241,7 @@ interrupt void MotorControlISR(void) {
 	BuildLevel4(&motor1);
 	BuildLevel4(&motor2);
 
-/*    //****** DEBUG ******
+/*    ****** DEBUG ******
   	if(start_measure==1){
 		if(measure_cnt>10){
 			motor1.ipark.Qs = Test_Iq_ref;

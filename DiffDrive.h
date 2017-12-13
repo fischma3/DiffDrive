@@ -39,7 +39,7 @@ Include project specific include files.
 #include "drv8301.h"
 #include "drv8305.h"
 
-//#include "DLOG_4CH_F.h"
+#include "Motor_ctrl.h"
 
 #include "steering_control.h"
 #include "power_limits.h"
